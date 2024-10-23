@@ -1,0 +1,34 @@
+.bg-personalizado {
+    background-color: nth($color-violeta, 1);
+}
+
+.navbar-toggler {
+    background-color: $marron-claro;
+}
+
+.navbar-nav {
+    align-items: center;
+
+    .nav-link {
+        color: nth($link-nav-color, 1);
+        font-size: 25px;
+        font-weight: bold;
+
+        &:hover {
+            color: nth($link-nav-color, 3);
+        }
+
+        &.nav-galeria,
+        &.nav-tienda,
+        &.nav-quizz,
+        &.nav-eras {
+            color: nth($link-nav-color, 2);
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .nav-link{
+        border-bottom: 2px solid nth($color-violeta, 3 );
+    }
+}

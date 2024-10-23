@@ -1,0 +1,81 @@
+/*? QUIZZ */
+.main-quizz {
+    background-image: url(../img/background-quizz.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 20px;
+    .quizz-intro {
+        .intro-form {
+            text-align: center;
+            color: $marron-claro;
+            padding: 0 50px 0 50px;
+            background-color: #8e5ba0b3;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0 30px 20px 30px;
+        
+            h1 {
+                margin-bottom: 20px;
+            }
+        
+            p {
+                margin: 0 30px 10px 30px;
+            }
+        }
+    }
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-items {
+        background-color: nth($color-violeta, 1);
+        color: $marron-claro;
+        border-radius: 10px;
+        padding: 25px;
+        margin: 10px 50px 50px 50px;
+        @extend %box-shadow;
+
+        div {
+            padding: 15px 0 0 0;
+
+            div {
+                textarea {
+                    &:focus {
+                        border: 2px solid $marron-oscuro;
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        input {
+            margin: 0 15px 0 15px;
+            padding: 5px 15px 5px 15px;
+            background-color: $marron-claro;
+            font-weight: bold;
+            font-size: 15px;
+
+            &:hover {
+                border: 2px solid $marron-claro;
+            }
+
+            &:focus {
+                border: 2px solid $marron-oscuro;
+                outline: none;
+            }
+        }
+    }
+}
+
+
+/*^------MEDIA-QUERIE------*/
+@media screen and (max-width:600px) {
+    .intro-form {
+        padding: 0 10px 0 10px;
+    }
+}

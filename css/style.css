@@ -37,6 +37,7 @@ html {
     color: #ebe5dbe3;
     font-size: 25px;
     font-weight: bold;
+    border-bottom: 2px solid #b593b8;
 }
 
 .nav-link:hover {
@@ -65,10 +66,6 @@ html {
 
 .navbar-nav{
     align-items:center;
-}
-
-.nav-link{
-    border-bottom: 2px solid #b593b8;
 }
 
 @media screen and (min-width:992px) {
@@ -341,11 +338,6 @@ html {
 .ul-mediaquerie .ul-mediaquerie-2 {
     grid-column: 4/6;
     list-style: none;
-}
-
-.boton-index:hover {
-    border: 2px solid #9639c5;
-    color: #54037c;
 }
 
 /*^------ERAS------*/

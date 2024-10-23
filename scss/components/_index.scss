@@ -1,0 +1,156 @@
+/*? INDEX */
+/*^ HERO */
+.hero {
+    background-image: url(../img/background-1989-01.jpg);
+    @extend %bg-properties;
+    color: $marron-claro;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+
+    img {
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+        grid-column: span 2;
+        object-fit: cover;
+        @extend %box-shadow;
+    }
+
+    .hero-texto {
+        width: 100%;
+        grid-column: span 3;
+        background-color: #54037c93;
+        border-radius: 10px;
+        padding: 25px;
+
+        h1 {
+            color: $blanco;
+        }
+
+        p {
+            font-size: 20px;
+            color: $blanco;
+        }
+    }
+}
+
+/*^ INDEX SECCIONES */
+.secciones {
+    color: $marron-oscuro;
+
+    h2 {
+        padding: 20px;
+        margin: 40px 20px 20px 20px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .secciones-individuales {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+
+        .secciones-tarjeta {
+            background-color: #54037c9d;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            padding-bottom: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 0.75px solid #625548;
+            @extend %box-shadow;
+
+            img {
+                width: calc(100% - 20px);
+                margin: 15px auto 15px auto;
+                border-radius: 10px;
+            }
+
+            p {
+                margin: 10px 10px 30px 10px;
+                color: $marron-claro;
+            }
+
+            .boton-index {
+                color: $blanco;
+                font-size: 20px;
+                text-transform: uppercase;
+                transition: 0.5s ease-in;
+
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: nth($color-violeta, 1);
+                }
+            }
+        }
+    }
+
+}
+
+/*^ INDEX QUOTE */
+.card {
+    margin: 20px;
+    padding: 10px;
+    background-color: nth($color-violeta, 3 );
+
+    .card-header {
+        background-color: nth($color-violeta, 2);
+        color: $blanco;
+    }
+
+    .card-body {
+        .blockquote {
+            color: $blanco;
+
+            .blockquote-footer {
+                margin: 0;
+                color: $blanco;
+            }
+        }
+    }
+}
+
+/*! INDEX MEDIA QUERIE */
+@media screen and (max-width: 690px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1;
+        gap: 0;
+
+        img {
+            margin-bottom: 20px;
+        }
+    }
+
+    .secciones {
+        .secciones-individuales {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto;
+        }
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .secciones {
+        h2 {
+            margin: 10px 20px 0px 20px;;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .secciones {
+        .secciones-individuales {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+        }
+    }
+}

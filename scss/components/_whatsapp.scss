@@ -1,0 +1,24 @@
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+
+    a {
+        img {
+            width: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .whatsapp-fixed {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        a{
+            img{
+                width: 30px;
+            }
+        }
+    }
+}

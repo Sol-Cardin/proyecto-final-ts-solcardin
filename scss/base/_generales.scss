@@ -1,0 +1,60 @@
+/*! RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 73.33px;
+}
+
+body {
+    background-color: #ebe5db;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+/*! Agrego porque al linkear a bootstrap, me aplica margin-bottom a todos los elementos. */
+ul {
+    margin: 0;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p, label {
+    margin: 0;
+    font-size: 20px;
+}
+
+.btn-primary{
+    background-color: nth($color-violeta, 1 );
+    border: none;
+}
+
+
+/*! MEDIA QUERIE */
+@media screen and (max-width:774px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    h2 {
+        font-size: 25px !important;
+    }
+    p, label {
+        font-size: 16px !important;
+    }
+}

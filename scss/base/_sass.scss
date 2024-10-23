@@ -1,0 +1,40 @@
+/* Funcionalidades */
+
+
+/*! VARIABLES */
+/*! Colores */
+$marron-oscuro: #625548;
+$marron-claro: #ebe5db;
+
+$blanco: #fffaf1;
+
+/*! LISTAS */
+$color-violeta: #54037c, #8e5ba0, #b593b8;
+$link-nav-color: #ebe5dbe3, #dda8f8, #ffffff;
+
+/*! EXTENDS */
+%box-shadow{
+    box-shadow: 9px 12px 15px -4px rgba(0, 0, 0, 0.59);
+    -webkit-box-shadow: 9px 12px 15px -4px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 9px 12px 15px -4px rgba(0, 0, 0, 0.59);
+}
+
+%bg-properties{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px;
+}
+
+%volver {
+    background-color: #ebe5dbd0;
+    border-radius: 100%;
+}
+
+/*! MIXIN */
+
+@mixin grid ($column, $row) {
+    grid-column: #{$column};
+    grid-row: #{$row};
+}
