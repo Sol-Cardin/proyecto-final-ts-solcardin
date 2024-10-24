@@ -1,19 +1,20 @@
 .text-uppercase {
     font-size: 15px;
     font-weight: bold;
-    color: nth($color-violeta, 1 );
+    color: nth($color-violeta, 1);
 }
 
 .fab {
     font-size: 20px;
-    color: nth($color-violeta, 1 );
+    color: nth($color-violeta, 1);
     transition: transform 0.5s ease;
-    &:hover{
-        color: nth($color-violeta, 2 );
+
+    &:hover {
+        color: nth($color-violeta, 2);
         transform: scale(1.1);
     }
 }
 
-.text-md-end{
-    color: nth($color-violeta, 1 );
+.text-md-end {
+    color: nth($color-violeta, 1);
 }

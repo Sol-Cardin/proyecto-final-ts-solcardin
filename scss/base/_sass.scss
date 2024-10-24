@@ -33,7 +33,6 @@ $link-nav-color: #ebe5dbe3, #dda8f8, #ffffff;
 }
 
 /*! MIXIN */
-
 @mixin grid ($column, $row) {
     grid-column: #{$column};
     grid-row: #{$row};

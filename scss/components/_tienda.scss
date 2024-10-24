@@ -36,7 +36,7 @@
     }
 
     .card-tienda {
-        background-color: nth($color-violeta, 2 );
+        background-color: nth($color-violeta, 2);
         @extend %box-shadow;
 
         .card-img-top {
