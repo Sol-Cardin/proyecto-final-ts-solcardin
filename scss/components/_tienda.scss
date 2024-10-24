@@ -1,4 +1,4 @@
-/*?-------------TIENDA-------------*/
+/*? TIENDA */
 .tienda-hero {
     background-image: url(../img/background-speaknow-02.jpg);
     @extend %bg-properties;
@@ -26,7 +26,7 @@
 .contendor-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 15px 0 15px 15px;
+    margin: 15px 15px 15px 15px;
     gap: 20px;
     align-content: start;
 
@@ -63,35 +63,9 @@
 
                 &:hover {
                     transform: scale(1.1);
-                    background-color: nth($color-violeta, 3);
+                    background-color: nth($color-violeta, 1);
                 }
             }
-        }
-    }
-}
-
-// .element.style{
-//     width: 100% !important;
-// }
-
-/*! TIENDA MEDIA QUERIE */
-@media screen and (max-width: 999px) {
-    .contendor-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width: 690px) {
-    .contendor-cards {
-        grid-template-columns: repeat(2, 1fr);
-        // grid-template-rows: auto auto;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .secciones {
-        .secciones-individuales {
-            grid-template-columns: 1fr;
         }
     }
 }
