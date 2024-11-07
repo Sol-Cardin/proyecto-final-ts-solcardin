@@ -1,19 +1,17 @@
 /*? QUIZZ */
 .main-quizz {
     background-image: url(../img/background-quizz.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 20px;
+    @extend %bg-properties;
+    padding: 50px;
 
     .quizz-intro {
         .intro-form {
             text-align: center;
-            color: $marron-claro;
+            color: nth($color-violeta, 1);
             padding: 0 50px 0 50px;
-            background-color: #8e5ba0b3;
-            padding: 10px;
+            background-color: #8e5ba044;
+            @extend %box-shadow;
+            padding: 30px;
             border-radius: 10px;
             margin: 0 30px 20px 30px;
 
@@ -37,7 +35,7 @@
         background-color: nth($color-violeta, 1);
         color: $marron-claro;
         border-radius: 10px;
-        padding: 25px;
+        padding: 30px 50px 30px 50px;
         margin: 10px 50px 50px 50px;
         @extend %box-shadow;
 
@@ -45,29 +43,29 @@
             padding: 15px 0 0 0;
 
             div {
-                textarea {
-                    &:focus {
-                        border: 2px solid $marron-oscuro;
-                        outline: none;
-                    }
+                .form-text {
+                    width: 100%;
+                    height: 150px;
                 }
             }
         }
 
-        input {
-            margin: 0 15px 0 15px;
-            padding: 5px 15px 5px 15px;
-            background-color: $marron-claro;
-            font-weight: bold;
-            font-size: 15px;
+        .form-botones {
+            .form-boton {
+                background-color: $blanco;
+                color: nth($color-violeta, 1);
+                margin-right: 30px;
+                margin-bottom: 10px;
+                padding: 5px 15px 5px 15px;
+                font-size: 15px;
+                text-transform: uppercase;
+                transition: 0.2s ease-in;
+                font-weight: bold;
+                transition: 0.2s ease-in;
 
-            &:hover {
-                border: 2px solid $marron-claro;
-            }
-
-            &:focus {
-                border: 2px solid $marron-oscuro;
-                outline: none;
+                &:hover {
+                    transform: scale(1.15);
+                }
             }
         }
     }

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: none;
 }
 
 html {
@@ -44,4 +45,5 @@ label {
 .btn-primary {
     background-color: nth($color-violeta, 1);
     border: none;
+    width: 150px;
 }

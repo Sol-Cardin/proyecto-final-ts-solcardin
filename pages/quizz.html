@@ -60,15 +60,20 @@
                 <div class="form-items">
                     <div>
                         <label for="">Nombre y Apellido:</label>
-                        <input type="text" placeholder="Escriba su nombre y apellido">
+                        <input type="text" placeholder="Escribí tu nombre y apellido">
                     </div>
                     <div>
-                        <label for="">Correo electronico:</label>
-                        <input type="email" placeholder="Escriba su correo electrónico">
+                        <label for="">Correo electrónico:</label>
+                        <input type="email" placeholder="Escribí tu correo electrónico">
                     </div>
                     <div>
-                        <label for="">¿Cuantos discos de Taylor escuchaste enteros?</label>
-                        <input type="number" placeholder="Solo se cuentan los discos enteros, no seas una rata mentirosa">
+                        <label for="">¿Cuántos discos de Taylor escuchaste enteros?</label>
+                        <select id="options" name="options" class="drop-down">
+                            <option value="option1">Entre 1 y 3</option>
+                            <option value="option2">Entre 4 y 7</option>
+                            <option value="option3">Entre 8 y 10</option>
+                            <option value="option4">Todos!</option>
+                        </select>
                     </div>
                     <div>
                         <label for="">¿Quién fue el peor novio de Taylor?</label>
@@ -86,12 +91,12 @@
                     <div>
                         <label for="">¿Cuál es tu Era preferida y por qué?</label>
                         <div>
-                            <textarea name="" id=""></textarea>
+                            <textarea name="" id="" class="form-text"></textarea>
                         </div>
                     </div>
-                    <div class="form-boton">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
+                    <div class="form-botones">
+                        <input type="submit" class="form-boton btn btn-primary" value="Enviar">
+                        <input type="reset" class="form-boton btn btn-primary" value="Borrar">
                     </div>
                 </div>
             </form>

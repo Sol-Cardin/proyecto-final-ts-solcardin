@@ -9,13 +9,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <meta name="description" content="Sumérgete en el universo de Taylor Swift: explora sus Eras, galería exclusiva de imágenes, tienda de productos y un quizz para saber si eres un auténtico Swiftie.">
-    <meta name="keywords" content="taylor swift, eras de taylor swift, taylor swift imágenes, tienda taylor swift, quizz swiftie, swifties, cultura pop, fan de taylor swift, discografía taylor swift">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="description"
+        content="Sumérgete en el universo de Taylor Swift: explora sus Eras, galería exclusiva de imágenes, tienda de productos y un quizz para saber si eres un auténtico Swiftie.">
+    <meta name="keywords"
+        content="taylor swift, eras de taylor swift, taylor swift imágenes, tienda taylor swift, quizz swiftie, swifties, cultura pop, fan de taylor swift, discografía taylor swift">
     <meta property="og:type" content="Web site">
     <meta property="og:title" content="Celebrando a Taylor Swift">
     <meta property="og:url" content="https://sol-cardin.github.io/proyecto-final-ts-solcardin/index.html">
     <meta property="og:image" content="https://sol-cardin.github.io/proyecto-final-ts-solcardin/img/ts_logo_v2.png">
-    <meta property="og:description" content="Sumérgete en el universo de Taylor Swift: explora sus Eras, galería exclusiva de imágenes, tienda de productos y un quizz para saber si eres un auténtico Swiftie.">
+    <meta property="og:description"
+        content="Sumérgete en el universo de Taylor Swift: explora sus Eras, galería exclusiva de imágenes, tienda de productos y un quizz para saber si eres un auténtico Swiftie.">
     <title>Celebrando a Taylor Swift</title>
 </head>
 
@@ -51,9 +55,13 @@
     </header>
     <main>
         <section class="hero">
+            <h1>SWIFTIES CELEBRANDO A</h1>
+            <img src="./img/ts-firma.png" alt="Taylor Swift" class="animate__animated animate__bounceInUp">
+        </section>
+        <section class="intro">
             <img src="./img/galeria-004.jpg" alt="imagen de taylor swift en la era evermore">
-            <div class="hero-texto">
-                <h1>¿Quién es Taylor Swift?</h1>
+            <div class="intro-texto">
+                <h2>¿Quién es Taylor Swift?</h2>
                 <p>Taylor Swift es mucho más que una cantante; es todo un ícono de la cultura pop. Desde que irrumpió en
                     la escena musical de adolescente, escribiendo canciones sobre crushes y corazones rotos, fué capaz
                     de reinventarse con cada álbum, dejando su marca en el country, el pop, el indie folk y más allá.
@@ -61,28 +69,54 @@
             </div>
         </section>
         <section class="secciones">
-            <h2>Explora curiosidades, teorías, imágenes exclusivas y hasta un quizz para saber si eres unx auténticx fan
+            <h2>Explorá curiosidades, teorías, imágenes exclusivas y hasta un quizz para saber si eres unx auténticx fan
                 de Taylor. ¡Descubre todo lo que preparamos para vos!</h2>
-            <div class="secciones-individuales">
-                <div class="secciones-tarjeta">
-                    <img src="./img/index-eras01.jpg" alt="imagen que representa las eras de taylor swift">
-                    <p>Explorá las distintas Eras que componen la discografía de Taylor.</p>
-                    <a href="./pages/eras.html" class="boton-index btn btn-primary">Eras</a>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-inner secciones-individuales">
+                    <div class="carousel-item active secciones-tarjeta">
+                        <img src="./img/index-eras02.jpg" class="d-block w-100 secciones-img img-eras" alt="imagen que representa las eras de taylor swift">
+                        <div class="carousel-caption">
+                            <p>Explorá las distintas Eras que componen la discografía de Taylor.</p>
+                            <a href="./pages/eras.html" class="boton-index btn btn-primary">Eras</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item secciones-tarjeta">
+                        <img src="./img/index-galeria02.jpg" class="d-block w-100 secciones-img" alt="collage de imagenes de Taylos Swift">
+                        <div class="carousel-caption">
+                            <p>Chequeá todas las imágenes de Taylor que tenemos en nuestra galeria.</p>
+                            <a href="./pages/galeria.html" class="boton-index btn btn-primary">Galeria</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item secciones-tarjeta">
+                        <img src="./img/index-tienda02.jpg" class="d-block w-100 secciones-img" alt="...">
+                        <div class="carousel-caption">
+                            <p>¿Estás buscando un regalo para tu bff, la Swiftie? Chequeá nuestra tienda!</p>
+                            <a href="./pages/tienda.html" class="boton-index btn btn-primary">Tienda</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item secciones-tarjeta">
+                        <img src="./img/index-quizz02.jpg" class="d-block w-100 secciones-img" alt="...">
+                        <div class="carousel-caption">
+                            <p>Contestá nuestro quizz para saber si sos unx "Swiftie" oficialmente.</p>
+                            <a href="./pages/quizz.html" class="boton-index btn btn-primary">Quizz</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="secciones-tarjeta">
-                    <img src="./img/index-galeria01.jpg" alt="imagen de taylor swift con un buzo blanco con rayas de colores">
-                    <p>Chequeá todas las imágenes de Taylor que tenemos en nuestra galeria.</p>
-                    <a href="./pages/galeria.html" class="boton-index btn btn-primary">Galeria</a>
-                </div>
-                <div class="secciones-tarjeta">
-                    <img src="./img/index-tienda01.jpg" alt="estampado de una remera de la reputation era">
-                    <p>¿Estás buscando un regalo para tu bff, la Swiftie? Chequeá nuestra tienda!</p>
-                    <a href="./pages/tienda.html" class="boton-index btn btn-primary">Tienda</a>
-                </div>
-                <div class="secciones-tarjeta">
-                    <img src="./img/index-quizz01.jpg" alt="imagen de swifties mostrando sus pulseras">
-                    <p>Contesté nuestro quizz para saber si sos unx "Swiftie" oficialmente.</p>
-                    <a href="./pages/quizz.html" class="boton-index btn btn-primary">Quizz</a>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
             </div>
         </section>
@@ -93,8 +127,7 @@
                 </div>
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p>"And when I felt like I was an old cardigan, under someone's bed, you put me on and said I
-                            was your favorite."</p>
+                        <p>"And when I felt like I was an old cardigan, under someone's bed, you put me on and said I was your favorite."</p>
                         <footer class="blockquote-footer">Cardigan<cite title="Source Title"> Folklore</cite></footer>
                     </blockquote>
                 </div>
@@ -120,7 +153,8 @@
                     <a href="https://www.tiktok.com/@taylorswift" target="_blank" class="me-4 text-dark">
                         <i class="fab fa-tiktok fa-2x"></i>
                     </a>
-                    <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=C8kM4huVTlSBVQ3cA2zmxA" target="_blank" class="me-4 text-dark">
+                    <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=C8kM4huVTlSBVQ3cA2zmxA"
+                        target="_blank" class="me-4 text-dark">
                         <i class="fab fa-spotify fa-2x"></i>
                     </a>
                 </div>

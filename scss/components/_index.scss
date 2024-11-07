@@ -1,6 +1,27 @@
 /*? INDEX */
 /*^ HERO */
 .hero {
+    background-image: url(../img/background-lover.jpg);
+    @extend %bg-properties;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+
+    h1 {
+        margin-bottom: 25px;
+        padding: 50px 40px 0 40px;
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+/*^ INTRO */
+.intro {
     background-image: url(../img/background-1989-01.jpg);
     @extend %bg-properties;
     color: $marron-claro;
@@ -9,6 +30,7 @@
     gap: 20px;
     align-items: center;
     margin: 0;
+    padding: 40px;
 
     img {
         width: 100%;
@@ -19,14 +41,15 @@
         @extend %box-shadow;
     }
 
-    .hero-texto {
+    .intro-texto {
         width: 100%;
         grid-column: span 3;
         background-color: #54037c93;
         border-radius: 10px;
-        padding: 25px;
+        padding: 40px;
+        @extend %box-shadow;
 
-        h1 {
+        h2 {
             color: $blanco;
         }
 
@@ -39,69 +62,106 @@
 
 /*^ INDEX SECCIONES */
 .secciones {
-    color: $marron-oscuro;
-
     h2 {
+        color: $marron-claro;
+        background-color: #54037c93;
+        border-radius: 10px;
         padding: 20px;
-        margin: 40px 20px 20px 20px;
+        margin: 40px 60px 40px 60px;
+        padding: 20px;
         text-align: center;
         font-size: 30px;
         font-weight: bold;
+        @extend %box-shadow;
     }
 
-    .secciones-individuales {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        padding: 20px;
+    .slide {
+        @extend %box-shadow;
 
-        .secciones-tarjeta {
-            background-color: #54037c9d;
+        .carousel-control-prev {
+            .carousel-control-prev-icon {
+                background: none;
+                background-image: url(../img/arrow-000000.png) !important;
+                background-size: 100% 100%;
+                width: 50px;
+                height: 50px;
+                transform: rotate(-90deg);
+                background-color: #ebe5dbd0;
+                border-radius: 100%;
+            }
+        }
+
+        .carousel-control-next {
+            .carousel-control-next-icon {
+                background-image: url(../img/arrow-000000.png) !important;
+                background-size: 100% 100%;
+                width: 50px;
+                height: 50px;
+                transform: rotate(90deg);
+                background-color: #ebe5dbd0;
+                border-radius: 100%;
+            }
+        }
+
+        .secciones-individuales {
             border-radius: 10px;
-            width: 100%;
-            height: auto;
-            padding-bottom: 30px;
-            text-align: center;
-            margin-bottom: 20px;
-            border: 0.75px solid #625548;
-            @extend %box-shadow;
 
-            img {
-                width: calc(100% - 20px);
-                margin: 15px auto 15px auto;
-                border-radius: 10px;
-            }
+            .secciones-tarjeta {
+                background-color: nth($color-violeta, 3);
 
-            p {
-                margin: 10px 10px 30px 10px;
-                color: $marron-claro;
-            }
+                .secciones-img {
+                    padding: 20px 20px 20px 20px;
+                    border-radius: 30px;
+                }
 
-            .boton-index {
-                color: $blanco;
-                font-size: 20px;
-                text-transform: uppercase;
-                transition: 0.5s ease-in;
+                .carousel-caption {
+                    position: static !important;
+                    background-color: nth($color-violeta, 3);
+                    padding-bottom: 3rem;
+                    padding-top: 0;
 
-                &:hover {
-                    transform: scale(1.1);
-                    background-color: nth($color-violeta, 1);
+                    p {
+                        background-color:#54037c9d;
+                        padding: 30px 70px 30px 70px;
+                        margin: 0 100px 20px 100px;
+                        color: $blanco;
+                        font-size: 25px;
+                        font-weight: bold;
+                        border-radius: 10px;
+                    }
+
+                    .boton-index {
+                        color: $blanco;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        transition: 0.2s ease-in;
+
+                        &:hover {
+                            transform: scale(1.15);
+                            background-color: nth($color-violeta, 1);
+                        }
+                    }
                 }
             }
         }
-    }
 
+        .carousel-indicators {
+            bottom: -10px;
+        }
+    }
 }
 
 /*^ INDEX QUOTE */
 .card {
-    margin: 20px;
+    margin: 40px 60px 40px 60px;
     padding: 10px;
-    background-color: nth($color-violeta, 3);
+    background-color: #54037c93;
+    ;
 
     .card-header {
-        background-color: nth($color-violeta, 2);
-        color: $blanco;
+        background-color: nth($color-violeta, 3);
+        color: nth($color-violeta, 1);
+        font-weight: bold;
     }
 
     .card-body {

@@ -3,10 +3,12 @@
     background-image: url(../img/background-speaknow-02.jpg);
     @extend %bg-properties;
     color: $marron-claro;
+    padding: 50px;
 
     .tienda-hero-copy {
         background-color: #8e5ba05a;
-        padding: 10px;
+        @extend %box-shadow;
+        padding: 30px;
         border-radius: 10px;
 
         h1 {
@@ -24,11 +26,12 @@
 }
 
 .contendor-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 15px 15px 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 25px 0 25px 25px;
     gap: 20px;
-    align-content: start;
 
     .card {
         margin: 0;
@@ -38,6 +41,8 @@
     .card-tienda {
         background-color: nth($color-violeta, 2);
         @extend %box-shadow;
+        flex: 0 1 calc(24% - 10px);
+        box-sizing: border-box;
 
         .card-img-top {
             width: 100%;
@@ -54,15 +59,15 @@
 
             .card-text {
                 margin-bottom: 10px;
-                border-top: 2px solid $blanco;
+                border-top: 1.5px solid $blanco;
             }
 
             .btn-tienda {
-                transition: 0.5s ease-in;
+                transition: 0.2s ease-in;
                 font-size: 20px;
 
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.15);
                     background-color: nth($color-violeta, 1);
                 }
             }
