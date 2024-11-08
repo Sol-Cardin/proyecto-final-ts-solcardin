@@ -279,7 +279,7 @@
 @media screen and (max-width: 1092px) {
     .contendor-cards {
         .card-tienda {
-            flex: 0 1 calc(32% - 10px); // 3 columns for medium screens
+            flex: 0 1 calc(32% - 10px);
         }
     }
 }
@@ -287,7 +287,7 @@
 @media screen and (max-width: 850px) {
     .contendor-cards {
         .card-tienda {
-            flex: 0 1 calc(48% - 10px); // 2 columns for small screens
+            flex: 0 1 calc(48% - 10px);
         }
     }
 }
@@ -295,7 +295,7 @@
 @media screen and (max-width: 576px) {
     .contendor-cards {
         .card-tienda {
-            flex: 0 1 calc(100% - 25px); // 1 column for extra small screens
+            flex: 0 1 calc(100% - 25px);
         }
     }
 }
